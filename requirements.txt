@@ -1,0 +1,25 @@
+# Core
+python-dotenv==1.0.1
+pydantic>=2.7.4,<3.0.0
+
+# LangChain (LCEL, text splitters, retrievers)
+# Usamos rangos (no versiones exactas) para que pip pueda resolver
+# automáticamente combinaciones compatibles entre estos paquetes, que se
+# actualizan con frecuencias distintas.
+langchain>=0.3.7,<0.4.0
+langchain-core>=0.3.17,<0.4.0
+langchain-text-splitters>=0.3.2,<0.4.0
+langchain-community>=0.3.7,<0.4.0
+langchain-openai>=0.2.6,<0.3.0
+
+# Pinecone (base vectorial serverless en la nube)
+pinecone>=5.4.2,<6.0.0
+
+# Embeddings locales (no requieren API key)
+fastembed>=0.4.2
+
+# Recuperador léxico (BM25)
+rank_bm25>=0.2.2
+
+# Conteo de tokens para el chunking
+tiktoken>=0.8.0
